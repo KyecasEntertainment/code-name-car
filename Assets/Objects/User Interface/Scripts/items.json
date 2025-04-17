@@ -1,0 +1,183 @@
+{
+    "shops": [
+      {
+        "key": "shop_1",
+        "value": {
+          "name": "Car Items",
+          "description": "Items for your car",
+          "items": [
+            {
+              "name": "Small Nitro",
+              "cost": 20,
+              "boost": 1,
+              "status": "available",
+              "is_limited": true
+            },
+            {
+              "name": "Nitro",
+              "cost": 50,
+              "boost": 2,
+              "status": "sold",
+              "is_limited": true
+            },
+            {
+              "name": "Turbo",
+              "cost": 100,
+              "boost": 5,
+              "status": "locked",
+              "is_limited": true
+            },
+            {
+              "name": "Super Turbo",
+              "cost": 250,
+              "boost": 10,
+              "status": "locked",
+              "is_limited": true
+            },
+            {
+              "name": "Hyper Turbo",
+              "cost": 1000,
+              "boost": 20,
+              "status": "locked",
+              "is_limited": true
+            },
+            {
+              "name": "Unlimited Nitro",
+              "cost": 5000,
+              "boost": 100,
+              "status": "locked",
+              "is_limited": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "shop_2",
+        "value": {
+          "name": "Cars",
+          "description": "Cars for your garage",
+          "items": [
+            {
+              "name": "Car 1",
+              "cost": 500,
+              "status": "locked"
+            },
+            {
+              "name": "Car 2",
+              "cost": 1000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 3",
+              "cost": 1500,
+              "status": "locked"
+            },
+            {
+              "name": "Car 4",
+              "cost": 2000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 5",
+              "cost": 5000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 6",
+              "cost": 10000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 7",
+              "cost": 20000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 8",
+              "cost": 50000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 9",
+              "cost": 100000,
+              "status": "locked"
+            },
+            {
+              "name": "Car 10",
+              "cost": 200000,
+              "status": "locked"
+            }
+          ]
+        }
+      },
+      {
+        "key": "shop_3",
+        "value": {
+          "name": "Car Guns",
+          "description": "Guns for your car",
+          "items": [
+            {
+              "name": "Gun 1",
+              "cost": 500,
+              "status": "locked"
+            },
+            {
+              "name": "Gun 2",
+              "cost": 1000,
+              "status": "locked"
+            },
+            {
+              "name": "Gun 3",
+              "cost": 1500,
+              "status": "locked"
+            },
+            {
+              "name": "Gun 4",
+              "cost": 2000,
+              "status": "locked"
+            },
+            {
+              "name": "Gun 5",
+              "cost": 5000,
+              "status": "locked"
+            }
+          ]
+        }
+      },
+        {
+            "key": "shop_4",
+            "value": {
+            "name": "Car Skins",
+            "description": "Skins for your car",
+            "items": [
+                {
+                "name": "Skin 1",
+                "cost": 500,
+                "status": "locked"
+                },
+                {
+                "name": "Skin 2",
+                "cost": 1000,
+                "status": "locked"
+                },
+                {
+                "name": "Skin 3",
+                "cost": 1500,
+                "status": "locked"
+                },
+                {
+                "name": "Skin 4",
+                "cost": 2000,
+                "status": "locked"
+                },
+                {
+                "name": "Skin 5",
+                "cost": 5000,
+                "status": "locked"
+                }
+            ]
+            }
+        }
+    ]
+  }
+  

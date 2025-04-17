@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5a80a7c0ba19bda4ea44a52375b95f4d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gas_can_prefab: {fileID: 493903802307495367, guid: 9534aceac77c8af4f8a5ce3d3870a89b, type: 3}
+  - player_status_scipt: {fileID: 5893947322748855391, guid: 19544154202bc5e4da6c2f9b14d8b5be, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
