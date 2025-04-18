@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2194074473030660107}
+  - component: {fileID: 4135767458632395800}
+  - component: {fileID: 5914148630805305376}
   m_Layer: 0
   m_Name: Gas Can Object
   m_TagString: Untagged
@@ -32,6 +34,42 @@ Transform:
   - {fileID: 4045115845499578115}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4135767458632395800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493903802307495367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6137fa974536a46aed810e6b633d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gas_can_value: 20
+  rotation_speed: 100
+  gas_can_script: {fileID: 7186574371791087966, guid: 5c6d6e90ba18711419c9f2377b45c9ac, type: 3}
+--- !u!65 &5914148630805305376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493903802307495367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.56129324, y: 1.3855071, z: 1.057488}
+  m_Center: {x: 0.003835082, y: 0.15555549, z: -0.008454084}
 --- !u!1001 &4587367091261341928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,55 +125,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab20b16daa405694386d4eedda080b01, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6016568183641214178}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab20b16daa405694386d4eedda080b01, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8815395849509248930}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab20b16daa405694386d4eedda080b01, type: 3}
---- !u!1 &3704478705595071929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ab20b16daa405694386d4eedda080b01, type: 3}
-  m_PrefabInstance: {fileID: 4587367091261341928}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6016568183641214178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3704478705595071929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6137fa974536a46aed810e6b633d33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gasCanValue: 20
-  rotationSpeed: 100
-  playerStatus: {fileID: 0}
---- !u!65 &8815395849509248930
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3704478705595071929}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.56129324, y: 1.3855071, z: 1.057488}
-  m_Center: {x: 0.003835082, y: 0.15555549, z: -0.008454084}
 --- !u!4 &4045115845499578115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab20b16daa405694386d4eedda080b01, type: 3}

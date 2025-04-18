@@ -48,10 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gas_can_prefab: {fileID: 493903802307495367, guid: 9534aceac77c8af4f8a5ce3d3870a89b, type: 3}
   spawn_point: {fileID: 9036425983318805939}
-  spawn_radius: 5
+  spawn_radius: 96.66
   spawn_instance: 1
   has_spawned: 0
-  player_status_scipt: {fileID: 5893947322748855391, guid: 19544154202bc5e4da6c2f9b14d8b5be, type: 3}
+  player_status_scipt: {fileID: 0}
 --- !u!114 &244482190839329125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +66,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gas_can_value: 20
   rotation_speed: 100
-  player_status: {fileID: 5893947322748855391, guid: 19544154202bc5e4da6c2f9b14d8b5be, type: 3}
   gas_can_spawner: {fileID: 7186574371791087966}
 --- !u!1 &1826347939830198195
 GameObject:
