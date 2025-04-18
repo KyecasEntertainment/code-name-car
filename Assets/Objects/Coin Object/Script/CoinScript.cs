@@ -5,15 +5,15 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
 
-    public int coinValue = 1; 
-    public float rotationSpeed = 100f;
+    public int coin_value = 1; 
+    public float rotation_speed = 100f;
 
-    public PlayerStatusScipt playerStatus;
+    public PlayerStatusScipt player_status;
 
     private void Update()
     {
         // Rotate the coin around its Y-axis
-        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up, rotation_speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,10 +21,10 @@ public class CoinScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Assuming you have a PlayerStatusScipt that handles player status
-            PlayerStatusScipt playerStatus = other.GetComponent<PlayerStatusScipt>();
-            if (playerStatus != null)
+            PlayerStatusScipt player_status = other.GetComponent<PlayerStatusScipt>();
+            if (player_status != null)
             {
-                playerStatus.AddCoins(coinValue); // Add coins to the player's status
+                player_status.AddCoins(coin_value); // Add coins to the player's status
                 Destroy(gameObject); // Destroy the coin object after collection
             }
         }

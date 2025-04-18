@@ -18,7 +18,7 @@ public class GasCanSpawner : MonoBehaviour
     }
 
     private void SpawnGasCans(){
-        if(player_status_scipt.gas < 10f && !has_spawned){
+        if(player_status_scipt.gas < 50f && !has_spawned){
             Vector3 random_position = Random.insideUnitSphere * spawn_radius;
             random_position.y = 2f;
             Instantiate(gas_can_prefab, random_position, Quaternion.identity);

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerStatusScipt : MonoBehaviour
 {
+    public Slider gas_slider;
+
     public int coins = 0;
     public float gas = 50f;
 
@@ -14,6 +16,8 @@ public class PlayerStatusScipt : MonoBehaviour
     public float player_experience = 0f;
 
     public bool has_gas;
+
+    public GasCanSpawner gas_can_spawner_script;
 
     public void FixedUpdate()
     {
@@ -25,6 +29,7 @@ public class PlayerStatusScipt : MonoBehaviour
         if (gas > 0f)
         {
             gas -= Time.deltaTime * 1f;
+            gas_slider.value = gas / 50f;
             has_gas = true; 
         }
         else
@@ -53,5 +58,7 @@ public class PlayerStatusScipt : MonoBehaviour
             amount = 0;
         }
         gas += amount;
+        gas_can_spawner_script.has_spawned = false; 
+        Debug.Log(gas_can_spawner_script.has_spawned);
     }    
 }

@@ -19,6 +19,11 @@ public class CarMovement : MonoBehaviour
     // Reference to the CinemachineFreeLook component
     public CinemachineVirtualCamera cinemachine_camera;
 
+    public GameObject wheel_front_left;
+    public GameObject wheel_front_right;
+    public GameObject wheel_back_left;
+    public GameObject wheel_back_right;
+
     private void Start()
     {
         car_rigidbody = GetComponent<Rigidbody>();
@@ -83,6 +88,7 @@ public class CarMovement : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
+
         if (collision.gameObject.CompareTag("Ground"))
         {
             is_on_ground = true;

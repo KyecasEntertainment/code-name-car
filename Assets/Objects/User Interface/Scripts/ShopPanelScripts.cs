@@ -30,8 +30,8 @@ public class ShopPanelScripts : MonoBehaviour
     [System.Serializable]
     public class ShopEntry
     {
-        public string key;   // Replaces the dictionary key
-        public Shop value;   // Represents the shop data
+        public string key;   
+        public Shop value; 
     }
 
     [System.Serializable]

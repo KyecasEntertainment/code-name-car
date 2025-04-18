@@ -7,8 +7,8 @@ public class GasCanScript : MonoBehaviour
     public float gas_can_value = 20;
     public float rotation_speed = 100f;
 
-    public PlayerStatusScipt player_status;
-    public GasCanSpawner gas_can_spawner;
+    public GasCanSpawner gas_can_script;
+
 
     private void Update()
     {
@@ -20,13 +20,9 @@ public class GasCanScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerStatusScipt player_status = other.GetComponent<PlayerStatusScipt>();
-            if (player_status != null)
-            {
-                player_status.AddGas(gas_can_value);
-                gas_can_spawner.has_spawned = false; 
-                Destroy(gameObject); 
-            }
+            other.gameObject.GetComponent<PlayerStatusScipt>().AddGas(gas_can_value);
+            gas_can_script.has_spawned = false; // Reset the spawn flag in the spawner script
+            Destroy(gameObject);
         }
     }
 }

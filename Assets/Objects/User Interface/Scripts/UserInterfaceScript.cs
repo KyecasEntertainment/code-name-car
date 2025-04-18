@@ -11,14 +11,8 @@ public class UserInterfaceScript : MonoBehaviour
 
     private void Start()
     {
-        shop_panel.SetActive(true);
+        shop_panel.SetActive(false);
         exprience_panel.SetActive(false);
-    }
-
-    private void FixedUpdate()
-    {
-     OpenShopPanel();
-     OpenExperiencePanel();   
     }
 
     private void OpenShopPanel()
@@ -28,9 +22,15 @@ public class UserInterfaceScript : MonoBehaviour
             shop_panel.SetActive(!shop_panel.activeSelf);
         }
     }
-    private void OpenExperiencePanel()
+    public void WinOpenPanel()
     {
         // if all coins are collected, open the experience panel
+    }
+
+    public void LoseOpenPanel()
+    {
+        exprience_panel.SetActive(true);
+
     }
 
 
